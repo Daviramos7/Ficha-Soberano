@@ -1,0 +1,135 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #101339; /* Fundo geral em #101339 */
+    color: #fff;
+}
+  
+.container {
+    background-color: #5a5a64; /* Cor sólida de roxo */
+    border-radius: 12px;
+    padding: 25px;
+    width: 600px; /* Largura aumentada */
+    text-align: center;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5), 10px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra direita e sombreado inferior-direito */
+    background: linear-gradient(to bottom right, #5a5a644d 50%, #161525e8 100%); /* Brilho suave na parte esquerda e roxo escuro à direita */
+}
+  
+h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+  
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff; /* Texto claro para melhor contraste */
+}
+  
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #161525; /* Bordas com tom de roxo escuro */
+    border-radius: 6px;
+    background-color: rgba(90, 90, 100, 0.6); /* Alterado para o cinza que você enviou (5a5a64) com opacidade */
+    color: #fff;
+}
+  
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+    background-color: #161525; /* Fundo sólido ao focar nos campos */
+}
+  
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+  
+.checkbox label {
+    font-size: 12px;
+    color: #fff; /* Cor clara para texto pequeno */
+}
+  
+button {
+    margin-top: 20px;
+    background: #5a5a64; /* Cor sólida de roxo para o botão */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+  
+button:hover {
+    background-color: #161525; /* Fundo sólido mais escuro no hover */
+}
+  
+a {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff; /* Cor de link adaptada ao tema */
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+/* Alinhar o checkbox e o botão de termos */
+.checkbox {
+    text-align: center; /* Centraliza o checkbox e o texto */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinha os itens no centro */
+    gap: 5px; /* Espaço entre o texto e o botão */
+    margin-top: 15px; /* Espaçamento superior */
+}
+  
+.terms-button {
+    background: #5a5a64; /* Botão de termos com cor sólida de roxo */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Efeito de profundidade */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona uma transição suave */
+}
+  
+.terms-button:hover {
+    background-color: #161525; /* Fundo mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento no hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Mais profundidade */
+}
+
+/* Efeito de cor verde ao clicar no botão de termos */
+.terms-button:active {
+    background-color: #28a745; /* Cor verde quando o botão for pressionado */
+    transform: scale(0.98); /* Leve redução de tamanho para efeito visual */
+}
